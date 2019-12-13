@@ -245,9 +245,6 @@ on post-fs-data
 
     # Create directory for apps access via QTEEConnector
     mkdir /data/vendor/qtee 0770 system system
-
-    #Create folder of camera
-    mkdir /data/vendor/camera 0770 camera camera
     
     # NFC local data and nfcee xml storage
     mkdir /data/nfc 0770 nfc nfc
