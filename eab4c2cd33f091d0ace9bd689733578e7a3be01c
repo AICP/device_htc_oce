@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "88cab69b_d2325c23",
+        "filename": "devicesettings/src/org/lineageos/settings/device/BootCompletedReceiver.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2019-12-15T12:32:57Z",
+      "side": 1,
+      "message": "remove this",
+      "revId": "eab4c2cd33f091d0ace9bd689733578e7a3be01c",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": true
+    }
+  ]
+}
