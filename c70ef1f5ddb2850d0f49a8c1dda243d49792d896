@@ -16,6 +16,24 @@
       "revId": "c70ef1f5ddb2850d0f49a8c1dda243d49792d896",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7ccc781a_b0afa5fb",
+        "filename": "rootdir/etc/init.target.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1646
+      },
+      "writtenOn": "2019-12-15T15:04:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "286b1198_1d81d5d3",
+      "revId": "c70ef1f5ddb2850d0f49a8c1dda243d49792d896",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": false
     }
   ]
 }
