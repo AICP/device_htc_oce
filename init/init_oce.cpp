@@ -29,9 +29,12 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <fcntl.h>
 
+#include <android-base/file.h>
 #include <android-base/logging.h>
 #include <android-base/properties.h>
+#include <android-base/strings.h>
 
 #include "vendor_init.h"
 #include "property_service.h"
@@ -45,6 +48,8 @@
 #include "htc-uhl.h"
 
 using android::base::GetProperty;
+using android::base::ReadFileToString;
+using android::base::Trim;
 using android::init::property_set;
 
 static void load_properties(const char *original_data)
@@ -86,6 +91,36 @@ static void load_properties(const char *original_data)
     free(data);
 }
 
+void init_alarm_boot_properties()
+{
+    char const *boot_reason_file = "/proc/sys/kernel/boot_reason";
+    std::string boot_reason;
+	
+    std::string reboot_reason = GetProperty("ro.boot.alarmboot", "");
+    if (ReadFileToString(boot_reason_file, &boot_reason)) {
+        /*
+        * Setup ro.alarm_boot value to true when it is RTC triggered boot up
+        * For existing PMIC chips, the following mapping applies
+        * for the value of boot_reason:
+        *
+        * 0 -> unknown
+        * 1 -> hard reset
+        * 2 -> sudden momentary power loss (SMPL)
+        * 3 -> real time clock (RTC)
+        * 4 -> DC charger inserted
+        * 5 -> USB charger insertd
+        * 6 -> PON1 pin toggled (for secondary PMICs)
+        * 7 -> CBLPWR_N pin toggled (for external power supply)
+        * 8 -> KPDPWR_N pin toggled (power key pressed)
+        */
+        if (Trim(boot_reason) == "3" || reboot_reason == "true") {
+            property_set("ro.vendor.alarm_boot", "true");
+        } else {
+            property_set("ro.vendor.alarm_boot", "false");
+        }
+    }
+}
+
 void vendor_load_properties()
 {
     std::string bootmid;
@@ -115,6 +150,6 @@ void vendor_load_properties()
             load_properties(htc_dugl_properties);
         }
     }
-}
 
-        
+    init_alarm_boot_properties();
+}
