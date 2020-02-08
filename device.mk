@@ -281,7 +281,6 @@ PRODUCT_PACKAGES += \
     init.htc.usb.configfs.rc \
     init.htc.usb.rc \
     init.qcom.usb.sh \
-    init.qcom.sensors.sh \
     init.qcom.sh \
     init.htc.fp.sh \
     init.qcom.early_boot.sh \
