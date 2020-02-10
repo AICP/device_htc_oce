@@ -290,6 +290,7 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.target.rc \
     init.oce.rc \
+    init.qcom.power.rc \
     ueventd.qcom.rc
 
 # Input
