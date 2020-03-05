@@ -281,7 +281,6 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.qcom.sh \
     init.htc.fp.sh \
-    init.htc_oce.fp.rc \
     init.qcom.early_boot.sh \
     init.qcom.firmware_links.sh \
     init.target.rc \
