@@ -400,5 +400,5 @@
 /sys/devices/virtual/hdcp/msm_hdcp  min_level_change 0664    system  graphics
 
 # NanoHub devices (Sensors)
-/dev/nanohub              0660   system     system
-/dev/nanohub_comms        0660   system     system
+/dev/nanohub              0660   root     system
+/dev/nanohub_comms        0660   root     system
