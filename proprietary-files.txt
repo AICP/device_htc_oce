@@ -855,6 +855,9 @@ vendor/lib64/libcsm_data.so
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhtc_common.so
 
+# msm_irqbalance
+vendor/bin/msm_irqbalance|117d7c8a8f6f12b3615ec8ab676231df93d277f1
+
 # NFC
 vendor/firmware/libpn551_fw.so:vendor/lib/libpn551_fw.so
 
@@ -894,6 +897,9 @@ vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
+
+# port bridge
+vendor/bin/port-bridge|d3a4232795d4baf4ac4206c4fb8a8b564710f46f
 
 # Postprocessing - from op3 - PKQ1.181203.001
 vendor/bin/hw/vendor.display.color@1.0-service|2ca340c7fd7689ac8ddf36f948fd95a7cd3bfc2e
