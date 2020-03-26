@@ -293,6 +293,7 @@ PRODUCT_PACKAGES += \
     init.htc.fp.sh \
     init.qcom.early_boot.sh \
     init.recovery.qcom.rc \
+    init.foreground.sh \
     init.target.rc \
     init.oce.rc \
     init.qcom.power.rc \
