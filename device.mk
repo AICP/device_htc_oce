@@ -289,6 +289,7 @@ PRODUCT_PACKAGES += \
     init.htc.fp.sh \
     init.qcom.early_boot.sh \
     init.qcom.firmware_links.sh \
+    init.foreground.sh \
     init.target.rc \
     ueventd.qcom.rc
 
