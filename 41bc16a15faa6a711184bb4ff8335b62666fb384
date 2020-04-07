@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2dcb0982_2c6f8246",
+        "filename": "aicp.dependencies",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2020-04-07T12:06:16Z",
+      "side": 1,
+      "message": "does the AICP variant does not fit?",
+      "revId": "41bc16a15faa6a711184bb4ff8335b62666fb384",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": true
+    }
+  ]
+}
