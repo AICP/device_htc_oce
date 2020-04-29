@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "88aa942d_f5bb72fc",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 423,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2020-04-29T02:49:35Z",
+      "side": 1,
+      "message": "since the default is 64 you can remove the overlay https://github.com/AICP/frameworks_base/blob/q10.0/core/res/res/values/aicp_config.xml#L133",
+      "revId": "4e124831475579e8905dd8d2b72d86b90670d798",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": true
+    }
+  ]
+}
