@@ -32,7 +32,7 @@ import com.android.internal.util.aicp.FileUtils;
 
 public class GestureMotionSensor {
 
-    private static final boolean DEBUG = false;
+    private static final boolean DEBUG = true;
     private static final String TAG = "GestureMotionSensor";
 
     private static final String CONTROL_PATH = "/sys/devices/virtual/htc_sensorhub/sensor_hub/gesture_motion";

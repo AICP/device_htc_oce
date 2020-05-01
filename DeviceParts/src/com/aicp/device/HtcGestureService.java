@@ -46,7 +46,7 @@ import com.android.internal.util.aicp.AicpVibe;
 
 public class HtcGestureService extends Service {
 
-    private static final boolean DEBUG = false;
+    private static final boolean DEBUG = true;
 
     public static final String TAG = "GestureService";
 
