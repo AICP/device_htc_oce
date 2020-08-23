@@ -233,6 +233,9 @@ ifneq ($(TARGET_BUILD_VARIANT),user)
 SELINUX_IGNORE_NEVERALLOWS := true
 endif
 
+# Sensors
+USE_SENSOR_MULTI_HAL := true
+
 # SHIMS
 TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib64/libril.so|/system/vendor/lib64/libshim_ril.so \

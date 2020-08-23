@@ -976,6 +976,8 @@ lib/hw/sensors.msm8996.so
 lib64/hw/sensors.msm8996.so
 vendor/lib/sensor_calibrate.so
 vendor/lib64/sensor_calibrate.so
+vendor/bin/init.qcom.sensors.sh|b62508c04989aaebd085f64af26a6c99860b7a26
+vendor/bin/sensors.qcom|12c126b85e83d7e701058a50d29e55c29e4e6f2e
 
 # Sensors - from OP3  PKQ1.181203.001/1911042108
 vendor/lib64/hw/activity_recognition.msm8996.so|64901bc837ed32dee28bbff9a60df7d8ac5cd140
